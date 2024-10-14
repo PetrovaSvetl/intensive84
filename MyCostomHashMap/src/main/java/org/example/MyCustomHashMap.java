@@ -14,19 +14,7 @@ public class MyCustomHashMap <K, V>{
         myHashMap = new Entry[capacity];
     }
 
-//    private int index (K key) {
-//        return key.hashCode() & (capacity - 1);
-//    }
-//    int indexFor(int hash, int length) {
-//        return hash & (length - 1);
-//    }
-//    int hash(K key) {
-//
-//        return key == null ? 0 :  key.hashCode() ^ key.hashCode() >>> 16;
-//    }
-//    private Entry [] resize() {
-//
-//    }
+
     public void put(K key, V value){
         int index = index(key);
         Entry newEntry = new Entry(key, value, null);
@@ -86,7 +74,7 @@ public class MyCustomHashMap <K, V>{
             if(myHashMap[i] != null){
                 Entry<K, V> currentNode = myHashMap[i];
                 while (currentNode != null){
-                    //System.out.println(String.format("Key is %s and value is %s", currentNode.getKey(), currentNode.getValue()));
+                   
                     System.out.println(currentNode.getKey() + "-" + currentNode.getValue());
                     currentNode = currentNode.getNext();
                 }
