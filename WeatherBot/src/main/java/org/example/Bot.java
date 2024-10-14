@@ -19,16 +19,16 @@ import java.util.Map;
 
 public class Bot extends TelegramLongPollingBot {
     private static final String API_CALL_TEMPLATE = "http://api.openweathermap.org/data/2.5/weather?q=";
-    private static final String API_KEY_TEMPLATE = "&APPID=c5a815e45cdf8cfa1408b6d795d9a082";
+    private static final String API_KEY_TEMPLATE = "key";
     public static ObjectMapper objectMapper = new ObjectMapper();
     @Override
     public String getBotUsername() {
-        return "Sp_14_bot";
+        return "botUsername";
     }
 
     @Override
     public String getBotToken() {
-        return "6736943745:AAE-EH1R56iTBzhfxaF8uL5WyCZeAATZ76M";
+        return "botToken";
     }
 
     @Override
